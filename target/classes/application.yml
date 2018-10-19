@@ -1,0 +1,21 @@
+spring:
+  thymeleaf:
+    mode: HTML5
+    encoding: UTF-8
+    content-type: text/html
+    cache: false
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test_data?useUnicode=true&characterEncoding=utf-8
+    password: 123456
+    username: root
+mybatis:
+  mapper-locations: mapper/*
+
+
+token:
+  secret: secret
+  expiration: 240
+  header: TokenHeader
+server:
+  port: 8082
